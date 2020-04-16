@@ -201,7 +201,6 @@ ul#horizontal-list {
     ul#horizontal-list li {
         display: inline;
         padding: 15px;
-        background-color: lightgray;
         margin-left: 10px;
         color: white;
     }
@@ -209,16 +208,19 @@ ul#horizontal-list {
 .tomato-icon {
     max-height: 80px;
     width: auto;
+
 }
 
 body {
-    background-color: gray;
+    background-image: url('/images/background.jpg');
 }
 
 .box-pomodoro {
     min-height: 400px;
-    background-color: lightgray;
+    background-color: white;
     padding-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 100px rgba(0,0,0,0.1);
 }
 
 .pomodoro-button {

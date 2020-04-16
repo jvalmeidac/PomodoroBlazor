@@ -1,6 +1,6 @@
 using System;
 
-namespace BlazorDemoYoutube.Data
+namespace PomodoroBlazor.Data
 {
     public class WeatherForecast
     {

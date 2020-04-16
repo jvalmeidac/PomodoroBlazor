@@ -9,10 +9,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using BlazorDemoYoutube.Data;
+using PomodoroBlazor.Data;
 using Blazored.LocalStorage;
 
-namespace BlazorDemoYoutube
+namespace PomodoroBlazor
 {
     public class Startup
     {

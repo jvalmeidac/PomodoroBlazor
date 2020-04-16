@@ -20,13 +20,13 @@
                                 </p>
                                 <p>
                                     <label>
-                                        Short Break:
+                                        Parada curta:
                                         <InputNumber @bind-Value="_pomodoroSettings.ShortBreak" />
                                     </label>
                                 </p>
                                 <p>
                                     <label>
-                                        Long Break:
+                                        Parada longa:
                                         <InputNumber @bind-Value="_pomodoroSettings.LongBreak" />
                                     </label>
                                 </p>
@@ -35,7 +35,7 @@
                                 <DataAnnotationsValidator />
                                 <ValidationSummary />
 
-                                <button type="submit">Submit</button>
+                                <button class="btn btn-outline-success" type="submit"><span class="oi oi-check"/> Aplicar</button>
 
                                 <br />
 
@@ -54,7 +54,7 @@
 
 
 @code {
-    private PomodoroSetttings _pomodoroSettings = new PomodoroSetttings();
+    private PomodoroSettings _pomodoroSettings = new PomodoroSettings();
 
     protected override async Task OnInitializedAsync()
     {
@@ -67,7 +67,7 @@
 
         if(json != null)
         {
-            _pomodoroSettings = System.Text.Json.JsonSerializer.Deserialize<PomodoroSetttings>(json);
+            _pomodoroSettings = System.Text.Json.JsonSerializer.Deserialize<PomodoroSettings>(json);
             StateHasChanged();
         }
     }
